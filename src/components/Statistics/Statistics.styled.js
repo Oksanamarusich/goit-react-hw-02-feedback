@@ -18,7 +18,7 @@ export const StatisticsContainer = styled.div`
 `
 
 export const StatisticsText = styled.p`
-text-align:canter;
+
 justify-content: center;
 font-weight: 500;
 font-size: 20px;
