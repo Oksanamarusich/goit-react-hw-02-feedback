@@ -1,9 +1,12 @@
+import React from "react";
+
 import {SectionContainer, SectionTitle} from "./Section.styled"
 
-
-export const Section = ({title}) => {
+export const Section = ({title, children}) => {
     return <SectionContainer>
-        {title && <SectionTitle>{title}</SectionTitle>}
+        <SectionTitle>{title}</SectionTitle>
+        {children}
+        
         
     </SectionContainer>
 }
