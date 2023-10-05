@@ -1,6 +1,6 @@
 
 import React from "react";
-import { StatisticsTitle, StatisticsContainer, StatisticsText } from "../Statistics/Statistics.styled"
+import {StatisticsContainer, StatisticsText } from "../Statistics/Statistics.styled"
 import {Notification} from "../Notification/Notification";
 
 export const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
