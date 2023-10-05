@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-export const NotificationContainer = styled.div`
-
-`
 export const TitleNotification = styled.h2`
+margin: 0;
+
 text-transform: uppercase;
 font-weight: 500;
 font-size: 20px;

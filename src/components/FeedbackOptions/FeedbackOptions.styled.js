@@ -17,6 +17,6 @@ cursor:pointer;
 `
 
 export const ButtonContainer = styled.div`
-margin-bottom: 40px;
+
 
 `

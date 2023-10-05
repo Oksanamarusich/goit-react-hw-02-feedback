@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const SectionContainer = styled.div`
-padding: 80px;
+
+padding: 20px 80px;
 display: flex;
   flex-direction: column;
   align-items: center;
-
 `
 
 export const SectionTitle = styled.h2`
+margin-top: 0;
 margin-bottom:40px;
-
 
 text-transform: uppercase;
 font-weight: 500;
