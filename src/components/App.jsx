@@ -10,35 +10,13 @@ export class App extends React.Component {
   neutral: 0,
   bad: 0,
 }
-    
-handelIncrementGood=()=> {
+    leaveFeedback = option => {
         this.setState(prevState => {
             return {
-                good: prevState.good + 1,
-                
-}
-        })  
-    }
-    
-handelIncrementNeutral = () => {
-        this.setState(prevState => {
-            return {
-                neutral: prevState.neutral + 1,
-                
-}
-        })  
-    }
-
-handelIncrementBad = () => {
-        this.setState(prevState => {
-            return {
-                bad: prevState.bad + 1,
-                
-            }
-            
-        })
-        
-    }
+                [option]: prevState[option] + 1,
+            };
+        });
+    };
 
 countTotalFeedback = () => {
         const { good, neutral, bad } = this.state;
@@ -54,9 +32,8 @@ countPositiveFeedbackPercentage = () => {
         return <div>
             <Section title="Please leave feedback">
                 <FeedbackOptions
-                       onGood={this.handelIncrementGood}
-                       onNeutral={this.handelIncrementNeutral}
-                       onBad = {this.handelIncrementBad} />
+                       options={Object.keys(this.state)}
+                onLeaveFeedback={this.leaveFeedback} />
     
             </Section>
             <Section title = "Statistics">

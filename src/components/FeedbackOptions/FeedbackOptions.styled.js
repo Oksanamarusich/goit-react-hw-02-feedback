@@ -16,7 +16,10 @@ cursor:pointer;
 }
 `
 
-export const ButtonContainer = styled.div`
+export const ButtonContainer = styled.ul`
+display:flex;
 
-
+`
+export const ListItem = styled.ul`
+list-style: none;
 `
